@@ -1,0 +1,31 @@
+what is next js?
+Next js has file based routing.(pages/index.js)
+Next js is a react framework that enables you to build superfast and extremely user-friendly websites using react.
+
+Why Next js?
+Because of SEO efficiency.
+It is using Server side rendering(SSR) and also at the same time it can be great Static Site Generator(SSG).
+Next js has file based routing.(pages/index.js)
+Supports for CSS Modules (CSS for Each Pages)
+Pre-rendering (better SEO)
+Image Optimization ('next/image')
+API Route (pages/api/user.js)
+Typescript Support,Fast Refresh.
+
+How is the routing in next.js app
+Its totally a filed based routing mechanism.
+When a file is added to the pages folder in project by default all the files becomes available as a route.
+
+
+//Nested Routing ke liyee blog pages me blog1.js ,blog2.js create karoo
+//url hoga //https:localhost:3000/blog/blog1
+//url hoga //https:localhost:3000/blog/blog2     (simple)
+
+//For dynamic route we have to use a special file naming convention that is to use [].
+First create the [pageno].js file in blog.
+we have to import userouter hook.
+import { useRouter} from "next/router";
+const router = useRouter();
+const pageNumber = router.query.pageno;
+
+
