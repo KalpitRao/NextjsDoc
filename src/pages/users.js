@@ -1,5 +1,5 @@
 //Static generation with getStaticProps.
-
+import User from "../components/user"
 
 function users({ users }) {
   return (
@@ -9,8 +9,7 @@ function users({ users }) {
         users.map((user)=>{
             return (
                 <div key={user.id}>
-                    <p>{user.name}</p>
-                    <p>{user.email}</p>
+                   <User user={user}/>
                 </div>
             )
         })
